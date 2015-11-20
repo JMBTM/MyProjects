@@ -1,0 +1,213 @@
+/*
+    HTML Tag selector codes here
+*/
+body{
+	background: url('../img/background.jpg') fixed no-repeat center;
+    background-size: 1400px 700px;
+    margin:0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+button{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline;
+    margin: 1% 5px;
+    padding: 8px 30px;
+    background-color: #FF3838;
+    border-radius: 3px;
+    border: 1px solid #F70000;
+    box-shadow: 2px 2px 1px #E8845E inset, 2px 1px 1px #6F5F5F;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition:0.5s;
+}
+
+h2{
+    transition-delay:6s;
+}
+
+button:hover .nav{
+    box-shadow: 2px 2px 1px #DC5C2B inset, 2px 1px 1px #DC5C2B;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type="button"], input[type="submit"]{
+    cursor:pointer;
+}
+
+
+/*
+    Classes selector codes here
+*/
+
+    /* ------- Container --------*/
+
+.container{
+    width:100%;
+    height:100%;
+    transition:all 0.5s;
+}
+
+
+    /* ------- Navigation ------- */
+.nav{
+    width: 98.5%;
+    height: 80px;
+    padding: 10px 10px;
+    margin: auto;
+    box-shadow: 2px 2px 2px #7A7C92;
+    background-color: #71FFFF;
+    opacity: 0.9;
+    border-radius: 0;
+    position:relative;
+    font-family:Arial, Helvetica, sans-serifsans-serif;
+    font-weight:bold;
+}
+
+.left-nav{
+    height:inherit;
+    display:inline;
+}
+.nav .left-nav img{
+    height:100%;
+    width:auto;
+}
+.nav, .nav .left-nav img, .nav .left-nav h1, .nav .right-nav, a{
+    transition:all 0.5s;
+}
+.nav .left-nav h1{
+    display:inline;
+    color:#211515;
+    vertical-align: 25px;
+}
+
+
+.right-nav{
+    float:right;
+    height:auto;
+    padding:23px 10px;
+}
+.right-nav .nav-link{
+    display:inline;
+}
+
+
+
+    /* ------- Navigation ends here ------- */
+
+
+    /* ------- Body of the page ------- */
+.body{
+    height:1000px;
+    width:100px;
+}
+    /* ------- Body ends here ------- */
+
+
+    /* ------ Login Form ------- */
+
+.login-form{
+    background-color:white;
+    width:400px;
+    padding:100px 10px;
+    border-radius:5px;
+    position:fixed;
+    top:-450px;
+    left:40%;
+    z-index: 2;
+    transition:all 0.4s;
+}
+.login-holder{
+    width:180px;
+    margin:auto;
+    position:relative;
+}
+.form-separator{
+    padding:10px 0px;
+}
+.btn{
+    padding:8px 23px;
+    font-weight: bold;
+    background-color:green;
+    border:none;
+    color:white;
+    border-radius:3px;
+}
+
+.background-black{
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    transition:opacity 0.3s;
+    transition-delay:0.3s;
+}
+
+/*
+    ID Selector Styles Here
+*/
+    
+    /* ----- Navigation Tab Here ------*/
+
+
+#lr_wrapper{
+    display: none;
+    position:absolute;
+    right:10px;
+    top:30px;
+}
+
+
+
+/*
+    Media Codes Here
+*/
+
+@media (max-width:455px)
+{
+    .nav .left-nav h1{
+        display:none;
+    }
+}
+
+@media (max-width:668px) {
+
+/*
+    Tag Name Here
+*/
+    button{
+        display:block;
+    }
+    
+
+
+/*
+    Classes Here
+*/
+    /* ---- Navigation -----*/
+    .hideb{
+     display:none;
+    }
+
+    .right-nav{
+        background-color:white;
+    }
+    .nav-link{
+        display:block;
+        margin-top:100px;
+    }
+
+
+/*
+    ID Here
+*/
+    /* --- Navigation Here --- */
+    #lr_wrapper{
+        display:block;
+    }
+    
+}
